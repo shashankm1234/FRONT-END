@@ -1,0 +1,149 @@
+[1] FONTS-STYLING IN CSS
+Font Selection is Important
+Choosing the right font has a huge impact on how the readers experience a website.
+The right font can create a strong identity for your brand.
+Using a font that is easy to read is important. The font adds value to your text. It is also important to choose the correct color and text size for the font.
+
+Generic Font Families->
+In CSS there are five generic font families:
+
+1. SERIF fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance. (BY-DEFAULT)
+2. SANS-SERIF fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
+3. MONOSPACE fonts - here all the letters have the same fixed width. They create a mechanical look. (EACH CHARACTER TAKES THE SAME AMOUNT OF WIDTH)
+4. CURSIVE fonts imitate human handwriting. (LOW-READABILITY)
+5. FANTASY fonts are decorative/playful fonts. (FANTASIZES THE FONT)
+
+All the different font names belong to one of the generic font families.
+
+CODE:
+body{
+    font-family: verdana,sans-serif;
+}
+Will change all the text in body as sans-serif, but first it will ask browser to render all the text in VERDANA FONT. (IF VERDANA ISN'T THERE IN THE BROWSER,IT WILL BE DEFAULT TO SANS-SERIF.)
+
+-> The CSS font-family Property
+   In CSS, we use the font-family property to specify the font of a text.
+Note: If the font name is more than one word, it must be in quotation marks, like: "Times New Roman".
+
+Eg. :
+Specify some different fonts for three paragraphs:
+
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+WEBSITE FOR CSS USAGE:   https://www.cssfontstack.com/
+
+WEBSITE FOR FONTS: fonts.google.com   (HERE WE HAVE VARIOUS TYPES OF FONTS AND WE CAN SELECT ANY WE WANT)
+TYPES WE CAN SELECT : MERRIWEATHER,SACRAMENTO,MONSTERRAT
+
+
+
+[2] TO PLACE SOME RANDOM TEXT PARAGRAPHS BEFORE YOU HAVE ANY CONTENT:
+   lorem + ENTER
+
+FOR SOME IMAGES: flaticon.com
+FOR ANIMATED IMAGES: giphy.com
+
+Now we increase our FONT-SIZE to 90px.
+h1{
+    font-size: 90px;
+}
+If user on their system change the default font-size of their browser, then also our font-size of 90px won't change AS FONT-SIZE ARE NOT DYNAMIC.
+h1{
+    font-size: 100%;   // means font-size is 16px always
+}
+  FOR FONTS: 16px = 100%
+For 90px : 90/16 * 100 = 5.625 * 100 = 562.5% for 90px
+Using font-size with % helps it when its used in other device. In whatever device you'll open, it will be automatically 100% or 50% whatsoever.
+
+Another technique -> using em
+h1{
+    font-size: 562.5em;
+}
+
+16px = 100% = 1em
+90px = 562.5% = 5.625em
+
+NOTE: EM OR % ARE DYNAMIC WHEREAS PX IS STATIC.  
+
+Now if font-size in body is else than font-size in h1, it will always take font-size of body.
+Eg.  body{ font-size: 2em;}
+     h1{ font-size: 5.625em;}
+
+Here font-size of h1 will also be 2em. THIS WILL AFFECT ONLY DYNAMIC(%,em) NOT STATIC(px).
+Eg.  body{ font-size: 20px;}
+     h1{ font-size: 90px;}
+Here font-size of h1 will remain 90px as it is static.
+
+-> TO IGNORE ALL THE PARENTS SETTING FONT-SIZE:
+   rem (i.e. root em)
+body{
+    font-size:200%;
+}
+h1{
+   font-size: 5.625rem;
+}
+
+Since we are using REM in h1, it will remain 5.625 and won't follow its parent. (BEAUTY OF USING REM IS THAT IT DOESN'T GET AFFECTED BY ITS UPSTREAM SIZE CHANGES) 
+
+40px = 2.5rem or 2.5em
+
+-> LINE-HEIGHT (Just give a single value without any units)
+    Eg. line-height: 2;
+
+
+[3] FOR GENERATING BUTTONS FOR WEBSITE :  ( css3buttongenerator.com )
+
+In this site, we can make buttons and also change its border,box,background,font and even HOVER(i.e. when we place our cursor on it,its colour changes)
+
+CODE GENERATED FOR THE BUTTON:
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+
+FOR VARIETY OF PHOTOS: PIXABAY.COM
+
+
+
+
+
+
+
+
+
+

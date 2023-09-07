@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    font-family: Arial;
+/* when an element is given height and width,border usually is added on outer side of height width but using border-box means
+makes border within the height and width only, not outside i.e. inside the content area only  */    
+    border: border-box;              
+}
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    /* when we want each element in our navbar to be in same line, use display: flex */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* amazon logo */
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.amazon-logo{
+    background-image: url(images/amazon_logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+.border{
+    /* each element with border class should have transparent border(transparent means border has no color,its color is 
+    same as background color ) */
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    /* when we hover on element 1.5px border shows up */
+    border: 1.5px solid white;
+}
+
+/* address */
+.add-first{
+    color: #cccccc;
+    /* always add font size in rem instead of px as it helps when site becomes responsive */
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+.add-second{
+    font-size: 1rem;
+    margin-left: 3px;
+}
+.add-icon{
+    /* icon and India come in same line */
+    display: flex;
+    /* to make it in center */
+    align-items: center;
+}
+
+/* search box */
+.nav-search{
+    display: flex;
+    /* to give each element even i.e. same space */
+    justify-content: space-evenly;
+    background-color: #FFD580;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+}
+.search-select{
+    /* margin-left: 15px; */
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    /* by default border vanishes */
+    border: none;
+}
+.search-input{
+    /* search auto acquires all area available */
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;                 /* horizontally center me ajyega */
+    align-items: center;                     /* vertically center me ajyega*/
+    font-size: 1.2rem;
+    color: black;
+}

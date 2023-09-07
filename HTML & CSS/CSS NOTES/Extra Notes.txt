@@ -1,0 +1,123 @@
+CSS EXTRA NOTES:
+(1) CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+The CSS Universal Selector
+The universal selector (*) selects all HTML elements on the page.
+The CSS rule below will affect every HTML element on the page: 
+
+* {
+  text-align: center;
+  color: blue;
+} 
+The CSS Grouping Selector
+The grouping selector selects all the HTML elements with the same style definitions.
+
+h1, h2, p {
+  text-align: center;
+  color: red;
+}
+
+A CSS comment is placed inside the <style> element, and starts with /* and ends with */ 
+/* This is
+a multi-line
+comment */
+
+(2) CSS background-image
+The background-image property specifies an image to use as the background of an element. By default, the image is repeated so it covers the entire element.
+Set the background image for a page: 
+body {
+  background-image: url("paper.gif");
+}
+
+(3) If the border-style property has four values:
+    border-style: dotted solid double dashed;
+    top border is dotted , right border is solid , bottom border is double , left border is dashed
+
+If the border-style property has three values:
+border-style: dotted solid double;
+top border is dotted , right and left borders are solid , bottom border is double
+
+If the border-style property has two values:
+border-style: dotted solid;
+top and bottom borders are dotted , right and left borders are solid
+
+If the border-style property has one value:
+border-style: dotted;
+all four borders are dotted
+
+(4) margin	      A shorthand property for setting all the margin properties in one declaration
+    margin-bottom	Sets the bottom margin of an element
+    margin-left	Sets the left margin of an element
+    margin-right	Sets the right margin of an element
+    margin-top	Sets the top margin of an element
+
+(5) The CSS Box Model
+In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element.
+It consists of: margins, borders, padding, and the actual content.
+
+(6) All CSS text-decoration Properties
+Property	                  Description
+text-decoration	            Sets all the text-decoration properties in one declaration
+text-decoration-color	      Specifies the color of the text-decoration
+text-decoration-line	      Specifies the kind of text decoration to be used (underline, overline, etc.)
+text-decoration-style	      Specifies the style of the text decoration (solid, dotted, etc.)
+text-decoration-thickness	Specifies the thickness of the text decoration line
+
+(7) Best Web Safe Fonts for HTML and CSS
+The following list are the best web safe fonts for HTML and CSS:
+Arial (sans-serif)
+Verdana (sans-serif)
+Helvetica (sans-serif)
+Tahoma (sans-serif)
+Trebuchet MS (sans-serif)
+Times New Roman (serif)
+Georgia (serif)
+Garamond (serif)
+Courier New (monospace)
+Brush Script MT (cursive)
+
+(8) CSS FLOAT AND CLEAR
+img{
+float:left;
+}
+// iska matlab ki hamari image content k left side pr aajayegi(this is done to display both image and text in same line)
+
+img{
+float:right;
+}
+// iska matlab ki hamari image content k right pr aajayegi
+
+Google Fonts
+If you do not want to use any of the standard fonts in HTML, you can use Google Fonts. Google Fonts are free to use, and have more than 1000 fonts to choose from.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

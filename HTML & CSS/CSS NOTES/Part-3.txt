@@ -1,0 +1,232 @@
+[1] FAVICONS:  (FAVOURITE ICON)  a shortcut icon, website icon, tab icon, URL icon, or bookmark icon
+
+WEBSIET->  favicon.cc
+Create your favicon and download it.
+
+A page's favicon is normally displayed in the browser's address bar (and sometimes in the history) 
+and next to the page's name in a list of bookmarks in browsers that support favicons.
+
+After downloading your favicon, put it in same folder where your website files are present.
+Using a link in your .html file inside head, put it.
+
+Code:
+<head>
+    <title>SHASHANK MISHRA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+
+[2] HTML-DIVS : (CONTENT-DIVISION ELEMENT) 
+The <div> tag defines a division or a section in an HTML document.
+
+The <div> tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.
+
+The <div> tag is easily styled by using the class or id attribute.
+
+Any sort of content can be put inside the <div> tag! 
+
+Note: By default, browsers always place a line break before and after the <div> element.
+
+ALLOWS YOU TO SPLIT UP YOUR CONTENT INTO SEVERAL CONTAINERS OR BOXES SO THAT YOU CAN AFFECT THE LAYOUT OF EACH BOX SEPARATELY.
+
+
+
+[3] BORDER STYLING IN CSS:
+
+{border-width : 0px,10px,20px,30px;}
+
+Means 0px at TOP, 10px at RIGHT, 20px at BOTTOM, 30px at LEFT. (CLOCKWISE)
+
+{border-width : 50px;}
+
+PADDING means some space between text and the BORDER.
+{padding : 20px;}   SPACE WILL BE ON ALL FOUR EDGES.
+
+MARGIN means space between 2 elements in our website. It will give space to 2 elements outside the border.
+{margin : 10px;}
+
+
+CODE:
+IN HTML -> 
+<body>
+    <div class="top-container">
+        <h1>I'm Shashank</h1>
+        <p>a programmer.</p>
+    </div>
+    <div class="mid-container">
+
+    </div>
+    <div class="bottom-container">
+
+    </div>
+</body>
+
+IN CSS->
+.top-container{
+    background-color: #e4f9f5;
+}
+
+.mid-container{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+.bottom-container{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+
+
+[4] CSS-DISPLAY:
+The display property specifies the display behavior (the type of rendering box) of an element.
+
+Use of some different display values:
+p.ex1 {display: none;}
+p.ex2 {display: inline;}
+p.ex3 {display: block;}
+p.ex4 {display: inline-block;}
+
+CSS Syntax
+display: value;
+
+COMMON BLOCK ELEMENTS:
+<p>
+<h1> to <h6>
+<div>
+<ol> <ul> <li>
+<form>
+
+FOR UNDERLINING :
+.pro{
+    text-decoration: underline;
+}
+
+
+->USING SPAN: FOR MAKING CHANGES AT A PART IN AN ELEMENT.
+
+SOME COMMON INLINE ELEMENTS: (they don't block other elements from occuring in the same line unlike <p> tags)
+a) <span>
+b) <img>
+c) <a> Anchor tags
+
+DISADVANTAGE OF INLINE ELEMENTS:  YOU CAN'T CHANGE THE WIDTH.
+
+->CONVERTING INTO INLINE ELEMENTS:
+p{
+display:inline;
+}
+
+This will convert paragraph into inline element and will allow next elements in SAME LINE.
+
+->FOR PARAGRAPHS IF WE WANT TO CHANGE THEIR WIDTHS AND MAKE THEM INLINE BOTH AT A TIME:
+p{
+display: inline-block;
+}
+
+
+-> NONE 
+IN HTML :<p class="second-p">WORLD</p>
+IN CSS:
+.second-p{
+display: none;
+}
+This will simply remove the element from our website.(i.e. will remove WORLD)
+
+OR WE CAN ALSO USE VISIBILITY:HIDDEN
+
+.second-p{
+visibility: hidden;
+}
+This will make the element disappear but will maintain its position and rest of the elements same where they were previously.
+
+
+
+[5] CSS-POSITIONING:
+REMEMBER -> ORDER COMES FROM THE CODE.
+
+TYPES OF POSITION PROPERTIES:
+1.STATIC -> All HTML elements are static by default.
+            HTML elements are positioned static by default.
+            Static positioned elements are not affected by the top, bottom, left, and right properties.
+            An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
+            This <div> element has position: static;
+            Eg: div.static {
+                    position: static;
+                    border: 3px solid #73AD21;
+                }
+
+2.RELATIVE
+            position: relative;
+            An element with position: relative; is positioned relative to its normal position.
+            Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position.
+            Other content will not be adjusted to fit into any gap left by the element.
+            This <div> element has position: relative;
+
+            FOR: img{right: 20px;}   IMAGE WILL MOVE TOWARDS LEFT BY 20PX.
+            FOR: img{left: 20px;}   IMAGE WILL MOVE TOWARDS RIGHT BY 20PX.
+            FOR: img{top: 20px;}   IMAGE WILL MOVE DOWN BY 20PX.
+            FOR: img{bottom: 20px;}   IMAGE WILL MOVE TOP BY 20PX.
+            Eg: div.relative {
+                    position: relative;
+                    left: 30px;
+                    border: 3px solid #73AD21;
+                }
+
+3. FIXED   It means that when we will scroll down the website,element with fixed position will be fixed at the top.
+            position: fixed;
+            An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. 
+            The top, right, bottom, and left properties are used to position the element.
+            A fixed element does not leave a gap in the page where it would normally have been located.
+            Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:
+            Eg:  div.fixed {
+                     position: fixed;
+                     bottom: 0;
+                     right: 0;
+                     width: 300px;
+                     border: 3px solid #73AD21;
+                 }
+NOTE: HENCE IF WE WANT SOME ELEMENT OR IMAGE TO BE FIXED AT THE TOP OR RIGHT OR LEFT OR BOTTOM OF OUR WEBSITE WHILE WE SCROLL DOWN, WE'LL USE FIXED POSITIONING.
+
+4. ABSOLUTE POSITIONING:
+                 We can define positioning of an element in CSS as absolute which renders the element relative to the first positioned (except static) parent. 
+                 Elements with positioning method as absolute are positioned by CSS Positioning properties (left, right, top and bottom).
+
+
+
+[6] CENTERING ELEMENTS IN CSS:
+One way is ->
+ body{
+    text-align: center;
+}
+
+Another way ->
+h1{
+    margin: 0 auto 0 auto;
+}
+
+0 for top, auto for right, 0 for bottom , auto for left (CLOCK-WISE)
+
+NOTE: text-align:center; will center everything that doesn't have a width set.
+
+We can also write this as:  
+h1{
+    margin: 0 auto;
+}
+This means top & bottom is 0 and left & right is auto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
