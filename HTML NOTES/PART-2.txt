@@ -1,0 +1,237 @@
+[1] TABLES:       <table></table>
+    HTML tables allow web developers to arrange data into rows and columns.
+
+Example:
+Company	                                 Contact	         Country
+Alfreds Futterkiste	              Maria Anders	         Germany
+Centro comercial Moctezuma	     Francisco Chang	         Mexico
+Ernst Handel	                      Roland Mendel	         Austria
+Island Trading	                      Helen Bennett	         UK
+Laughing Bacchus Winecellars	     Yoshi Tannamuri	         Canada
+Magazzini Alimentari Riuniti	     Giovanni Rovelli	         Italy
+
+A table in HTML consists of table cells inside rows and columns.
+
+<tr></tr> is for TABLE ROW.
+<td></td> is for TABLE DATA.
+
+Code:
+<h3>Work Experience</h3>
+    <table>
+        <tr>
+            <td>2010-2013</td>
+            <td>Lead Developer at APPLE</td>
+        </tr>
+        <tr>
+            <td>2010</td>
+            <td>CEO Of APPLE</td>
+        </tr>
+    </table>
+
+Output: 
+Work Experience
+2010-2013	Lead Developer at APPLE
+2010	      CEO Of APPLE
+
+Table Headers:
+Sometimes you want your cells to be headers, in those cases use the <th> tag instead of the <td> tag.
+  <tr>
+    <th>Person 1</th>
+    <th>Person 2</th>
+    <th>Person 3</th>
+  </tr>
+
+<thead></thead>      means HEAD OF TABLE.
+<thead>
+     <tr> 
+        <th>Year</th>
+        <th>Work</th>
+     </tr>
+</thead>
+
+Difference b/w td and th:  td mainly tells its table data but th tells its table's header.
+
+TO MAKE IMAGE IN THE LEFT AND ALL THE DATA IN THE RIGHT:
+
+We can make a TABLE With one row <tr> and 2 data cells in it i.e. <td>.
+One td i.e. table data will contain the image and other will have the data.
+
+CODE:
+ <table cellspacing="30">
+        <tr>
+            <td><img src="Image 2-modified.png" alt="" width="200" height="200"></td>
+            <td><h1>Shashank Mishra</h1>
+                <p><em>Founder and CTO of <strong><a href="https://appbrewery.com/">THE APP BREWERY</a></strong></em> </p>
+                <p>I am an ioS & Web Developer. I🧡coffee and brew my own beers.</p></td>
+        </tr>
+ </table>
+
+NOTE: MODIFICATION IN DESIGN IS PREFERIBLY SAID TO DO WITH HELP OF C.S.S. INSTEAD OF HTML.
+
+CELLSPACING tag is used to give some space between 2 cells.
+
+TABLE OF SKILLS:
+CODE
+   <h3>SKILLS</h3>
+    <table>
+        <tr>
+            <td>C++</td>
+            <td>⭐⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+            <td>DSA</td>
+            <td>⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+            <td>JAVA</td>
+            <td>⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+            <td>WEB D</td>
+            <td>⭐⭐⭐⭐</td>
+        </tr>
+    </table>
+
+
+DESIGNING USING TABLE : 
+ <h3>SKILLS</h3>
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>C++</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>DSA</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>JAVA</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>WEB D</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+OUTPUT: 
+SKILLS
+C++	⭐⭐⭐⭐   JAVA	⭐⭐⭐⭐
+WEB D	⭐⭐⭐⭐   DSA	⭐⭐⭐⭐
+
+
+[2]  FORMS:
+     <form></form>
+     An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+<form>
+....
+form elements
+....
+</form>
+
+TO DO THINGS IN FORM WE NEED 2 THINGS:  LABEL & INPUT [Label describes what it is and Input takes user input.]
+SYNTAX: 
+<form>
+<label>Name:</label>
+<input type="text">
+<input type="submit">
+</form>
+
+The <input> Element :  <input type="text">   a self closing-tag
+The HTML <input> element is the most used form element.
+An <input> element can be displayed in many ways, depending on the type attribute.
+
+INPUT TYPES:
+<input type="text">    // type is for text
+<input type="submit">   // type is for a submit button
+<input type="color">   // for the color
+<input type="checkbox">  // to get a small checkbox
+
+FOR PASSWORD:     <label>Password:</label>
+                  <input type="password">
+
+SOME MORE INPUT TYPES:
+<input type="file">     // to take input a file
+<input type="date">     // to get the date
+<input type="radio">    // for radio button [Radio buttons let a user select ONE of a limited number of choices.]
+<input type="range">    // to get range    
+
+
+TEXTAREA : It has 2 things -> rows and cols.
+Rows determine how tall your text area should be.
+Cols determine how wide it should be.
+
+CODE:
+<form action="index.html">
+        <label for="">Your Name:</label>
+        <input type="text"><br>
+        <!-- <label >Do you want to sign up to the e-mail list?</label>
+        <input type="checkbox"> -->
+        <label>Your E-mail:</label>
+        <input type="email"><br>
+        <label>Your Message:</label><br>
+        <textarea name="name" id="" cols="30" rows="10"></textarea><br>
+        <input type="submit">
+</form>
+
+eg-> <form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+In 1st line of form, action="index.html" means that when will click on submit button on this CONTACT ME page's last, it will take us to index.html page.
+
+<form action="mailto:info@londonappbrewery.com" method="post" enctype="text/plain">
+THIS LINE MEANS WHEN WE WILL CLICK ON SUBMIT, MAIL WILL GET OPEN FOR US TO WRITE E-MAIL.   enctype="text/plain" means there will be nothing like ? or , , only simple text.
+
+CODE: FOR CONTACT.HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+</head>
+<body>
+    <h1>MY CONTACT</h1>
+    <p>India</p>
+    <p>9560155979</p>
+    <p>shashank@gmail.com</p>
+    <hr>
+
+    <form action="mailto:info@londonappbrewery.com" method="post" enctype="text/plain">
+        <label for="">Your Name:</label>
+        <input type="text" name="yourName" value=""><br>
+        <!-- <label >Do you want to sign up to the e-mail list?</label>
+        <input type="checkbox"> -->
+        <label>Your E-mail:</label>
+        <input type="email" name="yourEmail" value=""><br>
+        <label>Your Message:</label><br>
+        <textarea name="yourMessage" id="" cols="30" rows="10"></textarea><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
+
+
+[3] PUBLISHING & HOSTING OUR WEBSITE:
+After making a repository and putting all the files in it i.e. index.html , contact.html , hobbies.html.
+Now go to GITHUB PAGES.
+
+
+
+

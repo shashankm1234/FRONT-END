@@ -1,0 +1,247 @@
+CSS is the language we use to style an HTML document.
+CSS is the language we use to style a Web page.
+
+What is CSS?
+-> CSS stands for Cascading Style Sheets.
+-> CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+-> CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+External stylesheets are stored in CSS files.
+
+CSS describes how HTML elements should be displayed.
+
+CSS Example :
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+CSS Solved a Big Problem :
+HTML was NEVER intended to contain tags for formatting a web page!
+HTML was created to describe the content of a web page, like:
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+When tags like <font>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. 
+Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.
+
+To solve this problem, the World Wide Web Consortium (W3C) created CSS.
+CSS removed the style formatting from the HTML page.
+
+TYPES OF CSS :
+1. INLINE CSS
+2. INTERNAL CSS
+3. EXTERNAL CSS
+
+
+SYNTAX TO CHANGE BACKGROUND OF OUR BODY:
+<body style="background-color: blue;">
+
+WEBSITE TO FIND BEAUTIFUL COLOR AND PALETTES:     www.colorhunt.co
+
+CSS COLORS:   https://www.w3schools.com/cssref/css_colors.asp
+
+(1) INLINE CSS:
+The Inline CSS uses the style attribute to apply CSS to a single HTML element.
+EXAMPLE:
+<!DOCTYPE html>
+<html>
+<body>
+<h1 style="color:crimson;font-family:cursive;">Hello World!!</h1>
+</body>
+</html>
+
+Disadvantages of Inline CSS:
+-> The inline CSS cannot be reused anywhere else.
+-> The inline CSS can not be stored at a single place and so the styles are tough to be edited.
+-> Styling of the pseudo-codes and pseudo-classes is not possible with inline CSS.
+
+
+
+(2) INTERNAL CSS:
+The internal style sheet is used to add a unique style for a single document. It is defined in <head> section of the HTML page inside the <style> tag.
+EXAMPLE:
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+body {  
+    background-color: linen;  
+}  
+h1 {  
+    color: red;  
+    margin-left: 80px;  
+}   
+</style>  
+</head>  
+<body>  
+<h1>The internal style sheet is applied on this heading.</h1>  
+<p>This paragraph will not be affected.</p>  
+</body>  
+</html>  
+
+First specify the name of element you want to change like body OR p (paragraph) OR h1 anything.
+
+<head>
+        <style>
+        body{
+            background-color: blue;
+        }
+        </style>
+</head>
+
+First we have the element i.e. body,then inside the braces we have what we want to changw i.e. background-color and at last we have the value i.e. blue.
+
+CODE FOR INTERNAL CSS:
+<style>
+        body{
+            background-color: #EAF6F6;
+        }
+
+        hr{
+            background-color: white;
+            border-style: none;
+            height: 2px;
+            /* width: 100px;     OR */  
+            width: 30%;
+        }
+
+        /* img{
+            height: 20px;
+        } */
+</style>
+
+
+BORDER STYLE:   The border-style property sets the style of an element's four borders. This property can have from one to four values.
+Examples:
+
+(a) border-style: dotted solid double dashed;
+-> top border is dotted
+-> right border is solid
+-> bottom border is double
+-> left border is dashed
+
+(b) border-style: dotted solid double;
+-> top border is dotted
+-> right and left borders are solid
+-> bottom border is double
+
+(c) border-style: dotted solid;
+-> top and bottom borders are dotted
+-> right and left borders are solid
+
+(d) border-style: dotted;
+-> all four borders are dotted
+
+
+Default value:	none
+Inherited:	no
+
+CODE FOR INTERNAL CSS:
+<!-- For getting the boilerplate code: html:5 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHASHANK'S PERSONAL SITE</title>
+
+    <style>
+        body{
+            background-color: #EAF6F6;
+        }
+
+        hr{
+            /* background-color: white; */
+            /* border-style: dotted none none;   */
+            border-style: none;
+            border-top-style: dotted;
+            border-color: grey;
+            border-width: 5px;
+            /* width: 100px; OR width = 30% so that when site gets opened in any device,width will be according to it, 30% in that device*/  
+            width: 5%;
+        }
+
+        /* img{
+            height: 20px;
+        } */
+
+    </style>
+
+</head>
+
+
+
+[3] EXTERNAL CSS:
+Using CSS in a separate file and linking it with the html file.
+Ex:
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+Inside href, css means the FOLDER and styles.css means the file address.
+
+Just add this link to any of your page and see it working as an EXTERNAL CSS.
+<head>
+ <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+(a) CSS TEXT COLOR:
+Text Color
+The color property is used to set the color of the text. The color is specified by:
+-> a color name - like "red"
+-> a HEX value - like "#ff0000"
+-> an RGB value - like "rgb(255,0,0)"
+
+Ex:
+body {
+  color: blue;
+}
+
+h1 {
+  color: green;
+}
+
+
+(b) Text Color and Background Color
+In this example, we define both the background-color property and the color property:
+
+Example
+body {
+  background-color: lightgrey;
+  color: blue;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+}
+
+div {
+  background-color: blue;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+

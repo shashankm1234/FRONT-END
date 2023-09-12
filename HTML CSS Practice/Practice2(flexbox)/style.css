@@ -1,0 +1,62 @@
+.fcontainer{
+    /* by this each item comes in same line, default direction of flex is HORIZONTAL */
+    /* display: flex means container is now flex-box and all properties of a flexbox can be used now */
+    display: flex;
+    border: 2px solid gray;
+    height: 45vh;
+    /* using flex-box we can use properties on flex item as well as flex container */
+
+    /* by default flex direction = row */
+    /* flex-direction: row; */
+    /* row-reverse means all items in a row but from opposite direction */
+    /* flex-direction: row-reverse; */
+
+    /* column-reverse means all items in a column but from opposite direction */
+    /* flex-direction: column-reverse; */
+
+    /* to center all items */
+    /* justify-content: center; */
+    /* to make all items in end */
+    /* justify-content: flex-end; */
+    /* to make all items in start */
+    /* justify-content: flex-start; */
+    /* each item has even/equal space between them */
+    /* justify-content: space-evenly; */
+    /* no space at right and left, only space in netween elements */
+    /* justify-content: space-between; */
+
+    /* to align items vertically in center */
+    /* align-items: center; */
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+
+    /* Diff btw align-items & justify-content */
+    /* 1. justify-content: along primary axis */
+/* (set horizontal alignment/spacing if flex-direction is row or vertical alignment/spacing if flex-direction is column) */
+/* 2. align-items: along secondary axis */
+/* (set vertical alignment if flex-direction is row or horizontal alignment if flex-direction is column) */
+
+    /* when screen gets small, items will get wrapped below each other making it look good */
+    flex-wrap: wrap;
+}
+
+.fitem{
+    background-color: red;
+    border: 2px solid black;
+    margin: 12px;
+    width: 122px;
+    height: 122px;
+}
+.item1{
+    /* greater the order, it will be in the last */
+    order: 3;
+    /* flex-grow: 3;                by default flex-grow is always 1 */
+    /* flex-shrink: 2;         element can shrink more when content is shrinked */
+    /* only this item will align in the center */
+    align-self: center;
+}
+/* item4 will come at end before item1 since order of item4 > order of item1 */
+.item4{
+    order: 4;
+    /* flex-grow: 2; */
+}

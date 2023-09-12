@@ -1,0 +1,258 @@
+(1)HTML EXTRA NOTES 
+The <!DOCTYPE html> declaration defines that this document is an HTML5 document.
+The <html> element is the root element of an HTML page.
+The <head> element contains meta information about the HTML page.
+The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab).
+The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+The <h1> element defines a large heading.
+The <p> element defines a paragraph.
+
+(2)An HTML element is defined by a start tag, some content, and an end tag:
+<tagname> Content goes here... </tagname>
+
+(3)Follow the steps below to create your first web page with Notepad or TextEdit:
+Step 1: Open Notepad (PC)
+Step 2: Write Some HTML
+Step 3: Save the HTML Page
+Step 4: View the HTML Page in Your Browser
+Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").
+
+HTML Links
+HTML links are defined with the <a> tag. The link's destination is specified in the href attribute. Attributes are used to provide additional information about HTML elements.
+
+HTML images 
+Defined with the <img> tag.
+The source file (src), alternative text (alt), width, and height are provided as attributes.
+
+(4)View HTML Source Code:
+Right-click in an HTML page and select "View Page Source" (in Chrome) or "View Source" (in Edge), or similar in other browsers. 
+This will open a window containing the HTML source code of the page.
+
+Inspect an HTML Element:
+Right-click on an element (or a blank area), and choose "Inspect" or "Inspect Element" to see what elements are made up of 
+(you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.
+
+
+(5)Empty HTML Elements
+HTML elements with no content are called empty elements. The <br> tag defines a line break, and is an empty element without a closing tag.
+
+(6)There are two ways to specify the URL in the src attribute:
+1. Absolute URL - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".
+Notes: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. 
+In addition, you cannot control external images; it can suddenly be removed or changed.
+
+2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. 
+If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg".
+If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".
+Tip: It is almost always best to use relative URLs. They will not break if you change domain.
+
+(7)The style Attribute
+The style attribute is used to add styles to an element, such as color, font, size, and more.
+Example   <p style="color:red;">This is a red paragraph.</p>
+
+(8)The HTML <pre> Element
+Defines preformatted text.
+The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.
+
+(9)HTML Formatting Elements
+Formatting elements were designed to display special types of text:
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text        (The HTML <mark> element defines text that should be marked or highlighted)
+<small> - Smaller text      (The HTML <small> element defines smaller text)
+<del> - Deleted text        (The HTML <del> element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text)
+<ins> - Inserted text       (The HTML <ins> element defines a text that has been inserted into a document. Browsers will usually underline inserted text)
+
+<sub> - Subscript text      
+(Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O:
+Example
+<p>This is <sub>subscripted</sub> text.</p> )
+
+<sup> - Superscript text
+(Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]:
+Example
+<p>This is <sup>superscripted</sup> text.</p>)
+
+(10)HTML <blockquote> for Quotations
+The HTML <blockquote> element defines a section that is quoted from another source.
+Browsers usually indent <blockquote> elements.
+Example
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote>
+
+HTML <q> for Short Quotations
+The HTML <q> tag defines a short quotation.
+Browsers normally insert quotation marks around the quotation.
+Example   <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+(11) Hide Inline Content
+Comments can be used to hide parts in the middle of the HTML code.
+Hide a part of a paragaph:    <p>This <!-- great text --> is a paragraph.</p>
+
+(12) HTML Links - The target Attribute
+By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+The target attribute specifies where to open the linked document.
+The target attribute can have one of the following values:
+
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+
+Relative URLs
+A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part).
+
+(13) HTML Links - Use an Image as a Link
+To use an image as a link, just put the <img> tag inside the <a> tag:
+<a href="default.asp"> <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">  </a>
+
+Link to an Email Address
+Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):
+<a href="mailto:someone@example.com">Send email</a>
+
+Create a Bookmark in HTML
+Bookmarks can be useful if a web page is very long.
+To create a bookmark - first create the bookmark, then add a link to it.
+When the link is clicked, the page will scroll down or up to the location with the bookmark.
+First, use the id attribute to create a bookmark:  <h2 id="C4">Chapter 4</h2>
+
+(14) The HTML <picture> Element
+The HTML <picture> element gives web developers more flexibility in specifying image resources.
+The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute. 
+This way the browser can choose the image that best fits the current view and/or device.
+Each <source> element has a media attribute that defines when the image is the most suitable.
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+
+(15) TABLES
+Everything between <td> and </td> are the content of the table cell.  Each table row starts with a <tr> and end with a </tr> tag.
+Sometimes you want your cells to be headers, in those cases use the <th> tag instead of the <td> tag.
+
+(16)HTML Description Lists
+HTML also supports description lists.
+A description list is a list of terms, with a description of each term.
+The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term:
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+(17)The <span> Element
+The <span> element is an inline container used to mark up a part of a text, or a part of a document.
+The <span> element has no required attributes, but style, class and id are common.
+When used together with CSS, the <span> element can be used to style parts of the text:
+<p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p>
+
+(18) HTML Iframes
+An HTML iframe is used to display a web page within a web page. The HTML <iframe> tag specifies an inline frame.
+An inline frame is used to embed another document within the current HTML document.
+Syntax:  <iframe src="url" title="description"></iframe> 
+         <iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+
+(19) File Path Examples
+Path	Description:
+<img src="picture.jpg">	The "picture.jpg" file is located in the same folder as the current page
+<img src="images/picture.jpg">	The "picture.jpg" file is located in the images folder in the current folder
+<img src="/images/picture.jpg">	The "picture.jpg" file is located in the images folder at the root of the current web
+<img src="../picture.jpg">	The "picture.jpg" file is located in the folder one level up from the current folder
+
+
+(20) RESPONSIVENESS:
+To create a responsive website, add the following <meta> tag to all your web pages:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+This will set the viewport of your page, which will give the browser instructions on how to control the page's dimensions and scaling.
+
+Responsive images are images that scale nicely to fit any browser size.
+
+Using the width Property
+If the CSS width property is set to 100%, the image will be responsive and scale up and down.
+
+(21) HTML Entities
+Some characters are reserved in HTML.  If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.
+Character entities are used to display reserved characters in HTML.
+A character entity looks like this:
+&entity_name;
+OR
+&#entity_number;
+To display a less than sign (<) we must write: &lt; or &#60;
+
+(22) The HTML <video> Element   
+How it Works
+The controls attribute adds video controls, like play, pause, and volume.
+It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads.
+The <source> element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.
+The text between the <video> and </video> tags will only be displayed in browsers that do not support the <video> element.
+
+To show a video in HTML, use the <video> element:
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+HTML <video> Autoplay
+To start a video automatically, use the autoplay attribute:
+<video width="320" height="240" autoplay>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+
+(23) The HTML <audio> Element
+To play an audio file in HTML, use the <audio> element:
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+HTML <audio> Autoplay
+To start an audio file automatically, use the autoplay attribute:
+<audio controls autoplay>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+Playing a YouTube Video in HTML
+To play your video on a web page, do the following:
+
+Upload the video to YouTube.
+Take a note of the video id.
+Define an <iframe> element in your web page.
+Let the src attribute point to the video URL.
+Use the width and height attributes to specify the dimension of the player.
+Add any other parameters to the URL (see below) :
+Example
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

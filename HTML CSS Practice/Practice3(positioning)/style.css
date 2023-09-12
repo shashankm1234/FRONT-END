@@ -1,0 +1,56 @@
+/* .container{ */
+    /* border: 2px solid black; */
+    /* background-color: khaki; */
+    /* height: 344px; */
+/* } */
+/* .box{ */
+    /* to make all div in 1 line */
+    /* display: inline-block; */
+    /* border: 2px solid red; */
+    /* width: 150px; */
+    /* height: 150px; */
+    /* margin: 2px; */
+/* } */
+/* #box3{ */
+    /* STATIC */
+    /* position: static;      by default position is static only */
+
+    /* RELATIVE */
+    /* moves relative to its normal position & will leave a gap at its normal position */
+    /* position: relative; */
+    /* top: 34px; */
+    /* left: 34px; */
+
+    /* ABSOLUTE */
+    /* catches position relative to parent i.e. div container */
+    /* moves relative to its first parent's normal position , but wont leave a gap */
+    /* position: absolute; */
+    /* top: 34px; */
+    /* left: 34px; */
+
+    /* FIXED */
+    /* position is fixed when we scroll */
+    /* position: fixed; */
+    /* right: 4px; */
+    /* bottom: 2px; */
+
+    /* STICKY */
+    /* when we scroll, its still sticked to the top */
+    /* position: sticky; */
+    /* top: 3px; */
+/* } */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.bcg-image{
+    background-image: url(image.jpeg);
+    /* While preserving its intrinsic proportions, the image is rendered at the largest size contained within, 
+    or covering, the background positioning area. If the image has no intrinsic proportions, 
+    then it's rendered at the size of the background positioning area.17-Jul-2023 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* vh means viewport height */
+    height: 100vh;
+}
