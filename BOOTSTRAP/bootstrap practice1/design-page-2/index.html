@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesone link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- css(bootstrap) link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <!-- external css link -->
+    <link rel="stylesheet" href="styles.css" />
+    <title class="title">StudentsJobs</title>
+  </head>
+
+  <body>
+    <!-- main container, contains whole page -->
+    <div class="container-fluid mt-3 d-flex">
+      <!-- column of size 8 -->
+      <div class="col-8">
+        <!-- row with Dashboard & input label -->
+        <div class="row">
+          <div class="col-8">
+            <h3>Dashboard</h3>
+          </div>
+          <div class="col-4">
+            <div class="input-group w-60">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="4 December 2019, Wednesday"
+              />
+              <span class="input-group-text"
+                ><i class="fa-solid fa-magnifying-glass search-icon"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- row with applications,shortlisted & onhold -->
+        <div class="row mt-4">
+          <div class="col-4">
+            <h6 class="new">
+              APPLICATIONS <br />
+              <h3>
+                12.2 K &nbsp; <i class="fa-solid fa-circle-user user"></i>
+              </h3>
+            </h6>
+          </div>
+          <div class="col-4">
+            <h6 class="new">
+              SHORTLISTED <br />
+              <h3>11.1 K &nbsp; <i class="fa-solid fa-yin-yang"></i></h3>
+            </h6>
+          </div>
+          <div class="col-4">
+            <h6 class="new">
+              ON-HOLD <br />
+              <h3>6.8 K &nbsp; <i class="fa-solid fa-dharmachakra"></i></h3>
+            </h6>
+          </div>
+        </div>
+
+        <!-- row with top active jobs -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div>
+              <div class="row d-flex">
+                <h5>
+                  Top Active Jobs<span class="float-end last30"
+                    >Last 30 Days</span
+                  >
+                </h5>
+              </div>
+            </div>
+            <div class="nextline d-flex">
+              <img
+                class="applicationicon"
+                src="img/applicationicon.png"
+                alt=""
+              />
+              <h6>Applications</h6>
+              &nbsp; &nbsp; &nbsp;
+              <img
+                class="shortlistedicon"
+                src="img/shortlistedicon.png"
+                alt=""
+              />
+              <h6>Shortlisted</h6>
+              &nbsp; &nbsp; &nbsp;
+              <img class="rejectedicon" src="img/rejectedicon.png" alt="" />
+              <h6>Rejected</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- column of size 4 -->
+      <div class="col-4">
+        <div class="float-end logout mx-4">
+          <i class="fa-solid fa-arrow-right-from-bracket logout-icon"></i>Logout
+        </div>
+      </div>
+    </div>
+
+    <!-- js(bootstrap link) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

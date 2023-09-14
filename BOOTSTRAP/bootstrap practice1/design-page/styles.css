@@ -1,0 +1,29 @@
+.inputdate{
+    border: none;
+}
+.search-button{
+    color: rgba(9, 154, 245, 0.884);
+    background-color: lightsteelblue;
+    border: none;
+}
+.logout{
+    color: #528AAE;
+}
+.logout-icon{
+    color: #528AAE;
+}
+h6{
+    /* font-weight: normal; */
+    color: lightslategrey;
+}
+.ladyimage{
+    /* border-radius: 50%; */
+    height: 110px;
+    width: 110px;
+}
+.search-icon{
+    color: lightseagreen;
+}
+.p-manager{
+    color: lightslategrey;
+}

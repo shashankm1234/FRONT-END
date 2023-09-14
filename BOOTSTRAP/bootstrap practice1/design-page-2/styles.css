@@ -1,0 +1,55 @@
+/* .logout{
+    color: #528AAE;
+}
+h6.new{
+    color: lightslategrey;
+}
+.search-icon{
+    color: lightseagreen;
+}
+::placeholder{
+    color: lightslategrey;
+}
+h3{
+    font-weight: bolder;
+}
+h5{
+    font-weight: bolder;
+}
+.applicationicon{
+    height: 1.5rem;
+    width: 25px;
+}
+.shortlistedicon{
+    height: 1.5rem;
+    width: 25px;
+}
+.rejectedicon{
+    height: 1.5rem;
+    width: 25px;
+}
+.last30 {
+    font-size: medium;
+    font-weight: 500;
+    color: rgb(17, 80, 163);
+} */
+
+.container-fluid {
+    background-color: aliceblue;
+}
+
+.appli-scroll {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border-top-color: blueviolet;
+    border-right-color: blueviolet;
+    border-bottom-color: blueviolet;
+    border-left-color: rgb(212, 185, 236);
+    border-width: 4px;
+}
+
+.card-appli {
+    border-radius: 25px;
+    border: none;
+}
